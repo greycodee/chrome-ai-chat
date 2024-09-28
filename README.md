@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Introduction
+
+An easy to use chrome native ai model chat interface.
+
+![](./img.png)
 
 ## Getting Started
 
