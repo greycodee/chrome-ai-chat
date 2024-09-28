@@ -42,18 +42,12 @@ export default function Home() {
     initializeModel();
   }, []);
 
-  // const model = await window.ai.assistant.create();
-  // const res = await model.prompt("how to request http api in nodejs and use es6?");
-  // return res;
-      
-
 
   const handleSend = async () => {
     if (input.trim()) {
       setMessages([...messages, { id: messages.length + 1, text: input, sender: 'user' }]);
       setInput('');
-      let res = await model.prompt(input);
-      console.log(res);
+      const res = await model.prompt(input);
       setMessages(msgs => [...msgs, { id: msgs.length + 1, text: res, sender: 'bot' }]);
     }
   }
